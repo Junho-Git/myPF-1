@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* 1차포폴 메인 페이지 CSS - main.css */
+
+/* 공통 외부 css */
+@import url(common.css);
+@import url(core.css);
+@import url(reset.css);
+@import url(grid_bg.css);
+@import url(grid_set.css);
+
+/*메인페이지 전체 디자인보기*/
+body{
+    background-image: url(../main.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*****************2. 배너영역*****************/
+/*배너영역 파티션 높이*/
+.b1{
+    height: 405px;
+}
+.b2{
+    height: 58px;
+}
+/*****************3-1. 컨텐츠1 영역*****************/
+/*컨텐츠 파티션 높이*/
+.c11{
+    height: 440px;
+}
+.c12{
+    height: 100px;
+}
+/*****************3-2. 컨텐츠2 영역*****************/
+.c21{
+    height: 80px;
+}
+.c22{
+    height: 380px;
+}
+/*****************4. 게시판 영역*****************/
+.r1{
+    height: 520px;
+}
+.r2{
+    height: 200px;
+}
