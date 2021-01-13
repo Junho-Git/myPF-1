@@ -2,46 +2,151 @@
 /* 1차포폴 메인 페이지 CSS - main.css */
 
 /* 공통 외부 css */
+@import url(grid_bg.css);
+@import url(grid_set.css);
 @import url(common.css);
 @import url(core.css);
 @import url(reset.css);
-@import url(grid_bg.css);
-@import url(grid_set.css);
 
 /*메인페이지 전체 디자인보기*/
-body{
+body {
     background-image: url(../main.png);
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: 1920px 2559px;
 }
 
 /*****************2. 배너영역*****************/
 /*배너영역 파티션 높이*/
-.b1{
+#ban {
+    width: 100%;
+    height: 405px;
+    background: url(../images/mainb/main1.jpg) no-repeat center/100% 100%;
+}
+
+.b1 {
     height: 405px;
 }
-.b2{
+
+.b2 {
     height: 58px;
+
 }
+
 /*****************3-1. 컨텐츠1 영역*****************/
 /*컨텐츠 파티션 높이*/
-.c11{
-    height: 440px;
+.c11 {
+    position: relative;
+    height: 445px;
+    padding: 0;
 }
-.c12{
-    height: 100px;
+
+.c11 li a img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: transform .4s ease-in-out;
 }
+
+.cimg1 {
+    position: relative;
+    top: 24px;
+    width: calc(25% - 18px);
+    height: 420px;
+    overflow: hidden;
+}
+
+.cimg2,
+.cimg3,
+.cimg4 {
+    position: relative;
+    top: 24px;
+    width: calc(25% - 18px);
+    height: 420px;
+    margin-left: 24px;
+    overflow: hidden;
+}
+
+.c11 li a span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.04em;
+    z-index: 2;
+}
+
+.c11 li a span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.c11 li a:hover img {
+    transform: rotate(-5deg) scale(1.15);
+}
+
 /*****************3-2. 컨텐츠2 영역*****************/
-.c21{
-    height: 80px;
+.c21 {
+    height: 170px;
 }
-.c22{
-    height: 380px;
+
+.wrap_tag{
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
+
+.wrap_tag1:first-child{
+    background: url(../images/icons/dott.png) no-repeat 100% 50%;
+}
+
+.wrap_tag1{
+    font-size: 33px;
+    width: 49%;
+    text-align: center;
+    color: #3d3d3d;
+}
+
+.wrap_tag2{
+    font-size: 33px;
+    width: 49%;
+    text-align: center;
+    color: #3d3d3d;
+}
+
+.cbtn1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.cbtn2{
+    display: none;
+}
+
+.c22 {
+    height: 390px;
+}
+
 /*****************4. 게시판 영역*****************/
-.r1{
+.r1 {
     height: 520px;
 }
-.r2{
-    height: 200px;
+
+.r2 {
+    height: 199px;
 }

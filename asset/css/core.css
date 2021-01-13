@@ -4,10 +4,16 @@
 /*body 기본설정*/
 body{
     font-family: 'Noto Sans KR',dotum,'돋움',vernade,arial,sans-serif;
-    color: #3d3d3d;
+    color: #171717;
     font-weight: 300;
     line-height: 1.5rem;
 }
+
+/*부모설정*/
+.prt{
+    position: relative;
+}
+
 
 /*속박스*/
 .ibx{
@@ -16,4 +22,12 @@ body{
     margin: 0 auto;
     border: 2px solid red;
     box-sizing: border-box;
+}
+
+/*IR(Image Replacement) class*/
+.bld {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
