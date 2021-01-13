@@ -103,35 +103,52 @@ body {
     height: 170px;
 }
 
-.wrap_tag{
+#wrap_tag{
     width: 380px;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 45px;
 }
 
 .wrap_tag1:first-child{
     background: url(../images/icons/dott.png) no-repeat 100% 50%;
 }
 
-.wrap_tag1{
+.wrap_tag1, .wrap_tag2{
     font-size: 33px;
     width: 49%;
     text-align: center;
     color: #3d3d3d;
 }
-
-.wrap_tag2{
-    font-size: 33px;
-    width: 49%;
-    text-align: center;
-    color: #3d3d3d;
+#cbtn1{
+    position: relative;
+    width: 100%;
 }
-
 .cbtn1{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    position: relative;
+    width: 67.5%;
+    text-align: center;
+    margin: 0 auto;
+}
+.cbtn1 li:first-child{
+    border-left: 1px solid #d4d4d4;
+}
+.cbtn1 li{
+    position: relative;
+    width: 16.5%;
+    height: 50px;
+    border-top: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+
+.cbtn1 a{
+    display: inline-block;
+    vertical-align: -13px;
+    height: 100%;
+    padding-top: 8px;
+    box-sizing: border-box;
 }
 
 .cbtn2{

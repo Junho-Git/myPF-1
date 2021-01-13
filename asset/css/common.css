@@ -46,9 +46,9 @@
     height: 23px;
     background-color: transparent;
     color: #fff;
-    vertical-align: -2px;
+    vertical-align: -3px;
     border: 1px solid #fff;
-    padding-left: 6px;
+    padding-left: px;
     cursor: pointer;
 }
 
@@ -71,10 +71,11 @@
     left: 114px;
     font-size: 0.938em;
     font-weight: 400;
+    padding: 10px;
 }
 .gnb_smenu{
     
-    width: 156px;
+    width: 135px;
     height: 490px;
 }
 .gnb_smenu li{

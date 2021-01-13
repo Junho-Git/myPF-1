@@ -12,6 +12,7 @@ body{
 /*부모설정*/
 .prt{
     position: relative;
+    padding: 0;
 }
 
 
