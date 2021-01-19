@@ -10,7 +10,7 @@
 
 /*메인페이지 전체 디자인보기*/
 body {
-    background-image: url(../main.png);
+/*    background-image: url(../main.png);*/
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1920px 2559px;
@@ -311,14 +311,15 @@ body {
     width: 687px;
     height: 201px;
     margin-top: 39px;
-    outline: 2px dotted red;
+/*    outline: 2px dotted red;*/
 }
 
 .underBrd li{
     position: relative;
     width: 49%;
     height: 90px;
-    outline: 1px solid blue;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
 }
 
 .underBrd li:nth-child(odd){
