@@ -23,6 +23,9 @@ img{
   border: none;/*이미지링크시 테두리없앰*/
 }
 
+li{
+    list-style: none;
+}
 
 
 /*태그 초기화 설정*/
