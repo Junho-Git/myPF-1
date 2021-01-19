@@ -3,11 +3,12 @@
 /*공통 CSS - common.css*/
 
 /****************1. 상단영역****************/
-.t1{
+.t1 {
     height: 100px;
 }
+
 /*메인로고*/
-.logo img{
+.logo img {
     width: 80px;
     height: 40px;
     margin-top: 38px;
@@ -15,7 +16,7 @@
 }
 
 /*****************상단메뉴*****************/
-.tmenu{
+.tmenu {
     position: absolute;
     top: 8px;
     right: 0px;
@@ -23,25 +24,27 @@
     cursor: pointer;
 }
 
-.tmenu a{
+.tmenu a {
     color: #fff;
 }
 
-.tmenu li:first-child{
-    padding: 0 16px 0 0 ;
-}
-.tmenu li:nth-child(2){
-    padding: 0 16px;
-}
-.tmenu li:last-child{
-    padding: 0 2px 0 16px ;
+.tmenu li:first-child {
+    padding: 0 16px 0 0;
 }
 
-.tmenu a:hover{
+.tmenu li:nth-child(2) {
+    padding: 0 16px;
+}
+
+.tmenu li:last-child {
+    padding: 0 2px 0 16px;
+}
+
+.tmenu a:hover {
     text-decoration: underline;
 }
 
-#lang{
+#lang {
     width: 150px;
     height: 23px;
     background-color: transparent;
@@ -52,18 +55,19 @@
     cursor: pointer;
 }
 
-#lang:focus{
+#lang:focus {
     outline: none;
 }
 
-#lang option{
+#lang option {
     background-color: #2A2A2A;
     user-select: none;
     white-space: nowrap;
 }
+
 /******************************************/
 /******************GNB메뉴******************/
-.gnbwrap{
+.gnbwrap {
     position: relative;
     outline: 5px dotted red;
     float: left;
@@ -73,26 +77,29 @@
     font-weight: 400;
     padding: 10px;
 }
-.gnb_smenu{
-    
+
+.gnb_smenu {
+
     width: 135px;
     height: 490px;
 }
-.gnb_smenu li{
+
+.gnb_smenu li {
     display: none;
     float: none;
 }
-    
-.gnb_smenu li a{
+
+.gnb_smenu li a {
     color: #171717;
 }
 
 /****************5. 하단영역****************/
 /*하단영역 첫째줄 파티션 높이*/
-.i1{
+.i1 {
     height: 70px;
 }
+
 /*하단영역 둘째줄 파티션 높이*/
-.i2{
+.i2 {
     height: 70px;
 }
