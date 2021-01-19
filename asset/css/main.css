@@ -305,6 +305,103 @@ body {
     line-height: 30px;
 }
 
+/*아래 게시판카드*/
+.underBrd{
+    position: relative;
+    width: 687px;
+    height: 201px;
+    margin-top: 39px;
+    outline: 2px dotted red;
+}
+
+.underBrd li{
+    position: relative;
+    width: 49%;
+    height: 90px;
+    outline: 1px solid blue;
+}
+
+.underBrd li:nth-child(odd){
+   margin-right: 2%;
+}
+
+.underBrd li:nth-child(2)~li{
+   margin-top: 3%;
+}
+
+
+.underBrd li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.underBrd li a:hover .ico{
+    text-decoration: underline;
+}
+
+.ico{
+    display: inline-block;
+    width: 230px;
+}
+.ico h4{
+    font-size: 1.125em;
+    color: #171717;
+    line-height: 1.4em;
+    margin-bottom: 1px;
+    letter-spacing: -1px;
+}
+.ico p{
+    font-size: 0.813em;
+    color: #8f8f8f;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ico1{/*오시는길*/   
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    width: 30px;
+    height: 36px;
+    background-image: url(../images/icons/is_mainicon_pc.png);
+    background-position: 0 0;
+    text-indent: -1000em;
+}
+.ico2{/*대관안내*/
+    position: absolute;
+    top: 27px;
+    left: 33px;
+    width: 38px;
+    height: 36px;
+    background-image: url(../images/icons/is_mainicon_pc.png);
+    background-position: -31px 0;
+    text-indent: -1000em;
+}
+.ico3{/*서울시민카드*/
+    position: absolute;
+    top: 27px;
+    left: 23px;
+    width: 30px;
+    height: 37px;
+    background-image: url(../images/icons/is_mainicon_pc.png);
+    background-position: -133px 0;
+    text-indent: -1000em;
+}
+.ico4{/*건축물투어*/
+    position: absolute;
+    top: 26px;
+    left: 33px;
+    width: 34px;
+    height: 36px;
+    background-image: url(../images/icons/is_mainicon_pc.png);
+    background-position: -98px 0;
+    text-indent: -1000em;
+}
 
 .r2 {
     height: 199px;
