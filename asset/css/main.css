@@ -203,8 +203,10 @@ body {
 .plist li:nth-child(3) {
     margin-right: 2%;
 }
-
-.plist img {
+.plist a{
+    display: block;
+}
+.imgthumb{
     display: block;
     width: 100%;
     height: 100%;
@@ -226,8 +228,22 @@ body {
     margin: 0 20px 8px;
 }
 
-.plist a:hover {
-    ;
+.plist a:hover .imgthumb::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/icons/icon_plus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 37px auto;
+    background-color: rgba(37,37,37,.73);
+}
+
+.plist a:hover{
     color: #fff;
 }
 
