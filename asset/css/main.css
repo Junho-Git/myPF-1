@@ -10,7 +10,7 @@
 
 /*메인페이지 전체 디자인보기*/
 body {
-/*    background-image: url(../main.png);*/
+    background-image: url(../main.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1920px 2559px;
@@ -185,10 +185,6 @@ body {
     font-size: 1.25em;
     margin-top: 7px;
     margin-bottom: 15px;
-}
-
-.plist {
-    position: relative;
 }
 
 .plist li {
