@@ -16,6 +16,14 @@
 }
 
 /*****************상단메뉴*****************/
+#gnb{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,52,113,.75);
+}
 .tmenu {
     position: absolute;
     top: 8px;
@@ -37,6 +45,7 @@
 }
 
 .tmenu li:last-child {
+    margin-top: -2px;
     padding: 0 2px 0 16px;
 }
 
@@ -51,7 +60,7 @@
     color: #fff;
     vertical-align: -3px;
     border: 1px solid #fff;
-    padding-left: px;
+    padding-left: 1px;
     cursor: pointer;
 }
 

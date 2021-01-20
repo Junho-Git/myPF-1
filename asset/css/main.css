@@ -258,7 +258,7 @@ body {
     height: 520px;
     float: right;
 }
-
+/*1. 공지사항*/
 .notice {
     margin-top: 54px;
 }
@@ -268,7 +268,6 @@ body {
     color: #171717;
     height: 30px;
     margin-bottom: 10px;
-    font-weight: 400;
 }
 
 .more {
@@ -317,7 +316,7 @@ body {
     line-height: 30px;
 }
 
-/*아래 게시판카드*/
+/*2. 아래 게시판카드*/
 .underBrd{
     position: relative;
     width: 687px;
@@ -328,14 +327,14 @@ body {
 
 .underBrd li{
     position: relative;
-    width: 49%;
+    width: 48.4%;
     height: 90px;
     border: 1px solid #e0e0e0;
     box-sizing: border-box;
 }
 
 .underBrd li:nth-child(odd){
-   margin-right: 2%;
+   margin-right: 3%;
 }
 
 .underBrd li:nth-child(2)~li{
@@ -365,7 +364,7 @@ body {
     color: #171717;
     line-height: 1.4em;
     margin-bottom: 1px;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
 }
 .ico p{
     font-size: 0.813em;
@@ -416,6 +415,119 @@ body {
     text-indent: -1000em;
 }
 
+/*3. 시설안내*/
+.guide{
+    margin-top: 58px;
+}
+.guide h3{
+    font-size: 1.25em;
+    color: #171717;
+    margin-bottom: 15px;
+}
+.guide .more{
+    top: 58px;
+    right: -8px;
+}
+
+/*3-1. 안내지도*/
+.guideImg{
+    position: relative;
+    max-height: 300px;
+}
+/*3-2. 안내사항*/
+.guideTxt{
+    position: absolute;
+    bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    width: 687px;
+    height: 84px;
+    background-color: #003471;
+    opacity: .8;
+    font-size: 0.75em;
+    font-weight: 300;
+    vertical-align: top;
+    color: #fff;
+    box-sizing: border-box;
+}
+.guideTxt li{
+    padding: 0 0 0 28px;
+    width: 400px;
+    height: 20px;
+}
+/*4. SNS*/
+.sns{
+    position: relative;
+    margin-top: 24px;
+    width: 687px;
+    height: 90px;
+    background-color: #efefef;
+/*    outline: 1px solid red;*/
+}
+.sns h3{
+    display: inline-block;
+    height: 30px;
+    margin: 30px 23px ;
+    font-size: 1.125em;
+    line-height: 1.5;
+    letter-spacing: -2px;
+}
+.sns ul{
+    display: inline-block;
+    float: right;
+    margin: 30px 107px 30px 0;
+}
+.sns li+li{
+    padding-left: 20px;
+}
+
+/*메뉴리스트*/
 .r2 {
     height: 199px;
+}
+
+.mlist{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    border: 1px solid #e0e0e0;
+    padding: 22px 43px;
+    margin: 9px auto;
+    box-sizing: border-box;
+}
+/*메뉴*/
+.mlist li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mlist img{
+    width: 60px;
+    height: 60px;
+    margin-right: 7px;
+}
+.mlist p{
+    display: inline-block;
+    vertical-align: 26px;
+    font-size: 18px;
+    letter-spacing: -2px;
+}
+/*리스트 세부조정*/
+.mlist li:nth-child(2){
+    margin-left: 57px;
+}
+.mlist li:nth-child(3){
+    margin-left: 81px;
+}
+.mlist li:nth-child(4){
+    margin-left: 80px;
+}
+.mlist li:nth-child(5){
+    margin-left: 55px;
+}
+.mlist li:nth-child(6){
+    margin-left: 48px;
+}
+.mlist li:nth-child(7){
+    margin-left: 65px;
 }
