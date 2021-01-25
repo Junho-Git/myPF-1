@@ -10,7 +10,7 @@
 
 /*메인페이지 전체 디자인보기*/
 body {
-    background-image: url(../main.png);
+/*    background-image: url(../main.png);*/
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1920px 2559px;
@@ -104,6 +104,10 @@ body {
     vertical-align: -2px;
 }
 
+/*********************컨텐츠영역*********************/
+#cont{
+    position: relative;
+}
 
 /*****************3-1. 컨텐츠1 영역*****************/
 /*컨텐츠 파티션 높이*/

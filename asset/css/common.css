@@ -180,9 +180,21 @@
 /*하단영역 첫째줄 파티션 높이*/
 /*고객지원리스트*/
 #info{
-    
-/*    background-color: #565e6b;*/
+    position: relative;
+    background-color: #565e6b;
+    padding-bottom: 118px;
 }
+/*가상요소로 하단 바 만들기*/
+#info::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    border-top: 1px solid #7e8184;
+    border-bottom: 1px solid #7e8184;
+    z-index: 1;/*포지션이 없는 요소보다 아래위치*/
+}
+
 .i11 {
     height: 70px;
     padding: 28px 0;
@@ -246,6 +258,57 @@
     padding-left: 10px;
 }
 
+
+/********************퀵메뉴********************/
+.quick{
+    position: fixed;
+    top: 264px;
+    left: 50%;
+    right: auto;
+    margin-left: 786px;
+    width: 60px;
+    height: 430px;
+    border-radius: 20px;
+    outline: 2px dashed red;
+    z-index: 9999;
+}
+
+.quick li{
+    width: 100%;
+    height: 86px;
+}
+
+.quick li a{
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background-color: #006aba;
+    color: #fff;
+    border-top: 1px solid #1a79c1;
+    border-bottom: 1px solid #00599c;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.quick li:first-child a{
+    border-radius: 20px 20px 0 0;
+}
+.quick li:last-child a{
+    border-radius: 0 0 20px 20px;
+}
+
+.quick li:hover a{
+    background-color: #565E6B;
+}
+
+.quick li a img{
+    display: block;
+    margin: 0 auto 3px;
+    vertical-align: middle;
+}
+
 /**************상단으로가기 아이콘**************/
 .topbtn{
     position: fixed;
@@ -253,15 +316,13 @@
     left: 50%;
     top: auto;
     right: auto;
+    width: 40px;
+    height: 40px;
     margin-left: 716px;
-    width: 21px;
-    height: 21px;
+    z-index: 2;
 }
 .topbtn a{
     display: block;
-    background: url(../images/icons/is_ico.png) no-repeat;
-    background-position: -121px 0;
-    width: 100%;
     height: 100%;
     background-color: #8e9397;
     border-radius: 50%;
@@ -269,7 +330,15 @@
     overflow: hidden;
 }
 
+.topbtn a:hover{
+    background-color: #000;
+}
+
 .topbtn a span{
     display: block;
-    margin: 12 auto;
+    width: 21px;
+    height: 21px;
+    margin: 12px auto;
+    background: url(../images/icons/is_ico.png) no-repeat;
+    background-position: -122px 0px;
 }
