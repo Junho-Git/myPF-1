@@ -20,24 +20,96 @@ body {
 /*배너영역 파티션 높이*/
 #ban {
     width: 100%;
-    height: 405px;
+    height: 408px;
     background: url(../images/mainb/main1.jpg) no-repeat center/100% 100%;
 }
 
 .b1 {
-    height: 405px;
+    height: 408px;
+}
+.b1::before{
+    content: "";
 }
 
 .b2 {
+    width: 100%;
     height: 58px;
-
+    background-color: #e8e8e8;
+    padding: 10px 0;
+    box-sizing: border-box;
+    
 }
+.nttime{
+    position: relative;
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.rt{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #006aba;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.rt::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 13px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/icons/tri.png) no-repeat 50% 50%;
+}
+.news{
+    font-size: 14px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.ntxt{
+    position: relative;
+    width: 90%;
+    height: 38px;
+    overflow: hidden;
+}
+
+
+/*운영시간안내 아이콘*/
+.nico{
+    position: absolute;
+    right: 20px;
+    top: 2px;
+}
+.under{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.play{
+    display: inline-block;
+    margin-left: 9px;   
+}
+.stop{
+    display: inline-block;
+    margin-left: 9px;
+    margin-top: 6px;
+    vertical-align: -2px;
+}
+
 
 /*****************3-1. 컨텐츠1 영역*****************/
 /*컨텐츠 파티션 높이*/
 .c11 {
     position: relative;
-    height: 445px;
+    height: 448px;
     padding: 0;
 }
 
@@ -100,13 +172,13 @@ body {
 
 /*****************3-2. 컨텐츠2 영역*****************/
 .c21 {
-    height: 170px;
+    height: 174px;
 }
 
 #wrap_tag {
     width: 380px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 44px;
     margin-bottom: 45px;
 }
 
@@ -129,7 +201,7 @@ body {
 
 .cbtn1 {
     position: relative;
-    width: 67.5%;
+    width: 68%;
     text-align: center;
     margin: 0 auto;
 }
@@ -181,10 +253,16 @@ body {
     padding: 0;
 }
 
+.c22 .more{
+    top: 10px;
+    right: -5px;
+}
+
 .ptit {
     font-size: 1.25em;
-    margin-top: 7px;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    
 }
 
 .plist li {
@@ -260,20 +338,20 @@ body {
 }
 /*1. 공지사항*/
 .notice {
-    margin-top: 54px;
+    margin-top: 62px;
 }
 
 .notice h3 {
     font-size: 1.25em;
     color: #171717;
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .more {
     position: absolute;
-    top: 57px;
-    right: -4px;
+    top: 61px;
+    right: -5px;
     width: 25px;
     height: 25px;
 }
@@ -286,6 +364,10 @@ body {
     width: 16px;
     height: 16px;
     background-position: -180px 0px;
+}
+
+.more:hover li:first-child{
+    background-position: -198px 0px;
 }
 
 .blist {
@@ -321,7 +403,7 @@ body {
     position: relative;
     width: 687px;
     height: 201px;
-    margin-top: 39px;
+    margin-top: 40px;
 /*    outline: 2px dotted red;*/
 }
 
@@ -377,7 +459,7 @@ body {
 .ico1{/*오시는길*/   
     position: absolute;
     top: 27px;
-    left: 27px;
+    left: 28px;
     width: 30px;
     height: 36px;
     background-image: url(../images/icons/is_mainicon_pc.png);
@@ -387,7 +469,7 @@ body {
 .ico2{/*대관안내*/
     position: absolute;
     top: 27px;
-    left: 33px;
+    left: 31px;
     width: 38px;
     height: 36px;
     background-image: url(../images/icons/is_mainicon_pc.png);
@@ -397,7 +479,7 @@ body {
 .ico3{/*서울시민카드*/
     position: absolute;
     top: 27px;
-    left: 23px;
+    left: 25px;
     width: 30px;
     height: 37px;
     background-image: url(../images/icons/is_mainicon_pc.png);
@@ -406,8 +488,8 @@ body {
 }
 .ico4{/*건축물투어*/
     position: absolute;
-    top: 26px;
-    left: 33px;
+    top: 27px;
+    left: 31px;
     width: 34px;
     height: 36px;
     background-image: url(../images/icons/is_mainicon_pc.png);
@@ -417,16 +499,16 @@ body {
 
 /*3. 시설안내*/
 .guide{
-    margin-top: 58px;
+    margin-top: 62px;
 }
 .guide h3{
     font-size: 1.25em;
     color: #171717;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 .guide .more{
-    top: 58px;
-    right: -8px;
+    top: 61px;
+    right: -5px;
 }
 
 /*3-1. 안내지도*/
@@ -458,10 +540,10 @@ body {
 /*4. SNS*/
 .sns{
     position: relative;
-    margin-top: 24px;
+    margin-top: 23px;
     width: 687px;
     height: 90px;
-    background-color: #efefef;
+/*    background-color: #efefef;*/
 /*    outline: 1px solid red;*/
 }
 .sns h3{
@@ -475,7 +557,7 @@ body {
 .sns ul{
     display: inline-block;
     float: right;
-    margin: 30px 107px 30px 0;
+    margin: 28px 109px 0px 0px;
 }
 .sns li+li{
     padding-left: 20px;
@@ -483,7 +565,7 @@ body {
 
 /*메뉴리스트*/
 .r2 {
-    height: 199px;
+    height: 201px;
 }
 
 .mlist{
@@ -491,8 +573,8 @@ body {
     width: 100%;
     height: 110px;
     border: 1px solid #e0e0e0;
-    padding: 22px 43px;
-    margin: 9px auto;
+    padding: 22px 45px;
+    margin: 13px auto;
     box-sizing: border-box;
 }
 /*메뉴*/
@@ -508,7 +590,7 @@ body {
 }
 .mlist p{
     display: inline-block;
-    vertical-align: 26px;
+    vertical-align: 24px;
     font-size: 18px;
     letter-spacing: -2px;
 }
