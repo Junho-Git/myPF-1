@@ -15,10 +15,6 @@
     margin-left: -12px;
 }
 
-#top{/*밑줄, 메뉴 보일 때만*/
-    
-}
-
 /*****************상단메뉴*****************/
 #gnb{
     position: absolute;
@@ -80,165 +76,39 @@
 
 /******************************************/
 /******************GNB메뉴******************/
-#gnbwrap{
-    width: 938px;
-    height: 568px;
-}
-/*메뉴*/
 .gnbwrap {
     position: relative;
     outline: 5px dotted red;
     float: left;
     top: 47px;
-    left: 82px;
-    width: 16.666666666%;
+    left: 114px;
     font-size: 0.938em;
     font-weight: 400;
-    letter-spacing: -1px;
-    background-color: #fff;
     padding: 10px;
-    box-sizing: border-box;
-}
-
-
-
-.gnbwrap h3{
-    width: 136px;
-    height: 44px;
-    text-align: center;
-    text-indent: -9px
 }
 
 .gnb_smenu {
-    width: 100%;
-    height: 474px;
-    margin-top: 16px;
+
+    width: 135px;
+    height: 490px;
 }
 
 .gnb_smenu li {
-    width: 93%;
-    border-bottom: 1px solid #e3e5e4;       
+    display: none;
+    float: none;
 }
-
-.gnb_smenu a{
-    display: block;
-    height: 40px;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-}
-
-.gnb_smenu span{/* 밑줄 트랜지션???*/
-    transition: all .3s linear;
-}
-
-/*hover된 span 밑에 밑줄넣기*/
-.gnb_smenu a:hover span::after{
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: #918f8f;
-    width: 100%;
-    height: 1px;
-    
-/*    animation: lineAni .3s linear;*/
-}
-
-@keyframes lineAni{
-    from{
-        width: 0;
-    }
-    to{
-        width: 50%
-    }
-}/**********keyframes**********/
-
 
 .gnb_smenu li a {
     color: #171717;
 }
 
-/*검색버튼*/
-.sbtn{
-    position: absolute;
-    top: 58px;
-    right: 17px;
-    width: 21px;
-    height: 21px;
-    background: url(../images/icons/is_ico.png) no-repeat;
-    border: none;
-    cursor: pointer;
-    text-indent: 3000px;
-    overflow: hidden;
-}
-
-
 /****************5. 하단영역****************/
 /*하단영역 첫째줄 파티션 높이*/
-/*고객지원리스트*/
-#info{
-    
-    background-color: #565e6b;
-}
-.i11 {
-    height: 66px;
-    padding: 20px 0;
-}
-.i11 li{
-    float: left;
-    width: auto;
-}
-.i11 a{
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 0.875em;
-    color: #fff;
-}
-.i11 li+li{
-    margin-left: 36px;
-}
-/*추가 사이트 로고*/
-.i12{
-    height: 66px;
-    padding: 0;
-}
-.os ul{
-    margin-top: 15px;
-    margin-left: 74px;
-}
-.os li:first-child{
-    margin-top: 8px;
-}
-.os li+li{
-    margin-left: 32px;
+.i1 {
+    height: 70px;
 }
 
 /*하단영역 둘째줄 파티션 높이*/
 .i2 {
     height: 70px;
-    padding: 0;
-}
-.i2 address{
-    padding-top: 24px;
-    padding-bottom: 5px;
-    font-size: 0.75em;
-    font-style: normal;
-    color: #fff;
-    letter-spacing: -.5px
-}
-.i2 p{
-    font-size: .688em;
-    letter-spacing: -1px;
-    color: #fff;
-}
-#fsite{
-    position: absolute;
-    top: 25px;
-    right: 40px;
-    width: 240px;
-    height: 35px;
-    line-height: 34px;
-    font-size: .875em;
-    padding-left: 10px;
 }
