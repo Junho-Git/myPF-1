@@ -16,10 +16,27 @@
 }
 
 #top{/*밑줄, 메뉴 보일 때만*/ /*메뉴!!*/
-    /*position: relative;
-    height: 608px;
-    background-color: #000;
-    z-index: 9999;*/
+    position: relative;
+}
+
+#top::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+#top:hover::before{
+    border-top: 4px solid red;
+    height: 534px;
+}
+
+
+#top:hover .gnb_smenu{
+    display: block;    
 }
 
 /*****************상단메뉴*****************/
@@ -85,12 +102,13 @@
 /******************GNB메뉴******************/
 #gnbwrap{
     width: 940px;
-    height: 570px;
+/*    height: 570px;*/
 }
 /*메뉴*/
 .gnbwrap {
     position: relative;
-    outline: 5px dotted red;
+/*    outline: 5px dotted red;*/
+    padding: 10px 10px 0;
     float: left;
     top: 48px;
     left: 82px;
@@ -99,23 +117,47 @@
     font-weight: 400;
     letter-spacing: -1px;
     background-color: #fff;
-    padding: 10px;
     box-sizing: border-box;
+    z-index: 9999;
 }
-
-
-
 .gnbwrap h3{
+    position: relative;
     width: 136px;
-    height: 44px;
+    height: 42px;
     text-align: center;
     text-indent: -9px
+}
+
+.gnbwrap h3::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #006ABA;
+    transition: width .2s ease-out;
+}
+
+.gnbwrap:hover h3::after{
+    width: 100%;
+    z-index: 99999;
 }
 
 .gnb_smenu {
     width: 100%;
     height: 474px;
     margin-top: 16px;
+    padding: 0 13px;
+    display: none;
+    box-sizing: border-box;
+}
+.gnbwrap:first-child{/*첫번째 .gnb_smenu 보더레프트 삭제필요*/
+    border-left: none;
+}
+.gnb_smenu{
+    position: relative;
+    border-left: 1px solid #e3e5e4;
 }
 
 .gnb_smenu li {
@@ -124,37 +166,29 @@
 }
 
 .gnb_smenu a{
-    display: block;
+    position: relative;
+    display: inline-block;
     height: 40px;
     padding-top: 8px;
     padding-bottom: 10px;
     box-sizing: border-box;
 }
 
-.gnb_smenu span{/* 밑줄 트랜지션???*/
-    transition: all .3s linear;
-}
-
 /*hover된 span 밑에 밑줄넣기*/
-.gnb_smenu a:hover span::after{
+.gnb_smenu a::after{
     content: "";
     position: absolute;
     display: block;
     background-color: #918f8f;
-    width: 100%;
+    width: 0;
     height: 1px;
-    
-/*    animation: lineAni .3s linear;*/
+    transition: width .3s ease-out;
 }
 
-@keyframes lineAni{
-    from{
-        width: 0;
-    }
-    to{
-        width: 50%
-    }
-}/**********keyframes**********/
+
+.gnb_smenu a:hover::after{
+    width: 100%;
+}
 
 
 .gnb_smenu li a {
@@ -173,6 +207,7 @@
     cursor: pointer;
     text-indent: 3000px;
     overflow: hidden;
+    z-index: 9999;
 }
 
 
@@ -269,7 +304,7 @@
     width: 60px;
     height: 430px;
     border-radius: 20px;
-    outline: 2px dashed red;
+/*    outline: 2px dashed red;*/
     z-index: 9999;
 }
 
