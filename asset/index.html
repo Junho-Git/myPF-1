@@ -129,7 +129,40 @@
     <!--2. 배너영역-->
     <div id="ban">
         <!--배너-->
-        <div class="col-12 b1">
+        <div class="col-12 b1 prt">
+            <!--2-1.배너슬라이드박스-->
+            <ul class="slider">
+                <li class="on">
+                    <span class="bld">서울디자인위크</span>
+                </li>
+                <li>
+                    <span class="bld">DDP디자인페어</span>
+                </li>
+                <li>
+                    <span class="bld">휴먼시티디자인어워드</span>
+                </li>
+                <li>
+                    <span class="bld">임시휴관안내</span>
+                </li>
+            </ul>
+            <!--2-2.배너속박스-->
+            <!--배너블릿포함 박스-->
+            <div class="conbx prt">
+                <aside class="indic">
+                    <li class="on"><a href=""><span>1</span></a></li>
+                    <li><a href=""><span>2</span></a></li>
+                    <li><a href=""><span>3</span></a></li>
+                    <li><a href=""><span>4</span></a></li>
+                </aside>
+                <div class="act">
+                    <li>
+                        <a href="" class="acton"><span>start</span></a>
+                    </li>
+                    <li class="onclick">
+                        <a href="" class="actoff"><span>stop</span></a>
+                    </li>
+                </div>
+            </div>
         </div>
         <div class="col-12 b2 clb prt">
             <div class="nttime">
@@ -140,7 +173,7 @@
                     </div>
                     <div class="nico">
                         <a href="" class="under"><img src="images/icons/new_next.png" alt="이전"></a>
-                        <a href="" class="play"><img src="images/icons/new_stop_on.png" alt="계속"></a>
+                        <a href="" class="play on"><img src="images/icons/new_stop_on.png" alt="계속"></a>
                         <a href="" class="stop"><img src="images/icons/new_start.png" alt="일시정지"></a>
                     </div>
                 </div>
@@ -187,16 +220,16 @@
             <section class="ibx clb cont2">
                 <div class="col-12 c21 prt">
                     <ul id="wrap_tag">
-                        <li class="wrap_tag1">
+                        <li class="on">
                             <a href="">주제별</a>
                         </li>
-                        <li class="wrap_tag2">
+                        <li>
                             <a href="">기간별</a>
                         </li>
                     </ul>
-                    <div id="cbtn1">
+                    <div id="cbtn">
                         <ul class="cbtn1">
-                            <li>
+                            <li class="on">
                                 <a href=""><span class="ctit">전체</span></a>
                             </li>
                             <li>
@@ -217,7 +250,7 @@
                         </ul>
                     </div>
                     <ul class="cbtn2">
-                        <li>
+                        <li class="on">
                             <a href=""><span class="ctit">지난 프로그램</span></a>
                         </li>
                         <li>
