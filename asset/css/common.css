@@ -243,6 +243,48 @@
     z-index: 9999;
 }
 
+.src{ /*돋보기메뉴!!!!!!! 미완성으로, display: none;*/
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    z-index: 1000000;
+}
+.srcf{
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #f00;
+}
+.input{
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 35px 15px;
+    top: 50px;
+    box-sizing: border-box;
+}
+#searchTxt{
+    position: absolute;   
+    width: 85%;
+    height: 90px;
+    font-size: 2.625em;
+    line-height: 89px;
+    background-color: #fff;
+    border: 0;
+}
+.bt_src{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 92px;
+}
+.src_often{
+    position: absolute;
+    padding: 17px 25px 8px;
+    
+}
+
 
 /****************5. 하단영역****************/
 /*하단영역 첫째줄 파티션 높이*/
@@ -260,7 +302,16 @@
     height: 68px;
     border-top: 1px solid #7e8184;
     border-bottom: 1px solid #7e8184;
-    z-index: 1;/*포지션이 없는 요소보다 아래위치*/
+    z-index: -1;/*포지션이 없는 요소보다 아래위치*/
+}
+
+.info a{
+    cursor: pointer;
+    z-index: 10;
+}
+
+.info a:hover{
+    text-decoration: underline;
 }
 
 .i11 {
