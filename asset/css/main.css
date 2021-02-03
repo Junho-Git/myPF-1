@@ -346,12 +346,14 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+.cbtn1{
+    display: none;
+}
 
 .cbtn1 li:first-child,
 .cbtn2 li:first-child {
     border-left: 1px solid #d4d4d4;
 }
-
 .cbtn1 li {
     position: relative;
     width: 16.5%;
@@ -360,7 +362,6 @@ body {
     border-right: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4;
     box-sizing: border-box;
-    /*    display: none;*/
 }
 
 .cbtn1 a,
@@ -376,11 +377,11 @@ body {
 }
 
 .cbtn2 {
-    display: none;
     position: relative;
     width: 40%;
     text-align: center;
     margin: 0 auto;
+    display: none;
 }
 
 .cbtn2 li {
@@ -393,7 +394,15 @@ body {
     box-sizing: border-box;
 }
 
+
 /**********클릭 된 cbtn li에 효과주기**********/
+.cbtn1.on{
+    display: block;
+}
+.cbtn2.on{
+    display: block;
+}
+
 .cbtn1 li.on,
 .cbtn2 li.on {
     background-color: #231f20;
@@ -775,52 +784,79 @@ body {
     width: 100%;
     height: 110px;
     border: 1px solid #e0e0e0;
-    padding: 22px 45px;
+    padding: 22px 40px;
     margin: 13px auto;
     box-sizing: border-box;
 }
-
+.mlist ul{
+    position: relative;
+    width: 100%;
+}
 /*메뉴*/
+.mlist li{
+    position: relative;
+    width: 186px;
+    height: 60px;
+    text-align: left;
+}
+
 .mlist li a {
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
+/*    top: 18px;*/
+/*    left: 60px;*/
+/*    padding-top: 17px;*/
+    line-height: 3.4;
+    padding-left: 70px;
+    box-sizing: border-box;
 }
-
-.mlist img {
-    width: 60px;
-    height: 60px;
-    margin-right: 7px;
+.img1{
+    background: url(../images/icons/fnb_list1.png) no-repeat;
 }
-
-.mlist p {
-    display: inline-block;
-    vertical-align: 24px;
-    font-size: 18px;
-    letter-spacing: -2px;
+.img2{
+    background: url(../images/icons/fnb_list2.png) no-repeat;
+}
+.img3{
+    background: url(../images/icons/fnb_list3.png) no-repeat;
+}
+.img4{
+    background: url(../images/icons/fnb_list4.png) no-repeat;
+}
+.img5{
+    background: url(../images/icons/fnb_list5.png) no-repeat;
+}
+.img6{
+    background: url(../images/icons/fnb_list6.png) no-repeat;
+}
+.img7{
+    position: absolute;
+    left: 60px;
+    background: url(../images/icons/fnb_list7.png) no-repeat;
 }
 
 /*리스트 세부조정*/
 .mlist li:nth-child(2) {
-    margin-left: 57px;
+    margin-left: 20px;
 }
 
 .mlist li:nth-child(3) {
-    margin-left: 81px;
+    margin-left: 20px;
 }
 
 .mlist li:nth-child(4) {
-    margin-left: 80px;
+    margin-left: 0px;
 }
 
 .mlist li:nth-child(5) {
-    margin-left: 55px;
+    margin-left: -10px;
 }
 
 .mlist li:nth-child(6) {
-    margin-left: 48px;
+    margin-left: 32px;
 }
 
 .mlist li:nth-child(7) {
-    margin-left: 65px;
+    margin-left: -55px;
 }
