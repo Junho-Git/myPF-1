@@ -74,18 +74,26 @@ $(function(){//////////////////////////jQB///////////////////////
     //////////////////// 슬라이드 멈춤/재생 ////////////
     // 1. 멈춤/재생 이미지 변경
     // 변경대상: .act
-    $(".act li.onclick").click(function(e){
-        e.preventDefault();
-        
-        $(this).removeClass("onclick").siblings().addClass("onclick");
-        
-    });////////////click/////////////
+    let resetBtn = function(){
+        $(".act li.onclick").click(function(e){
+            e.preventDefault();
+
+          $(this).removeClass("onclick").siblings().addClass("onclick");
+
+        });////////////click/////////////
+    };
+    
+    resetBtn();
+    
     // 2. 멈춤 / 재생 기능 부여
     // 2-1. 멈춤
     // 변경대상: .actoff
-    $(".actoff").click(function(){
-        
+    $(".actoff").click(function(e){
+        e.preventDefault();
+                
         clearInterval(autoI);
+        
+        resetBtn();
         
     });///////////click///////////////
     
@@ -94,20 +102,22 @@ $(function(){//////////////////////////jQB///////////////////////
 
     // 2-2. 재생
     // 변경대상: .acton
-    $(".acton").click(function(){
-            
+    $(".acton").click(function(e){
+        e.preventDefault();
+      
+        clearInterval(autoI);
         
         /// 광클금지 /////////////////////////
         if (prot) return false; //1이면 돌아가
         prot = 1; //1로만들어 잠금!
         setTimeout(function () {
             prot = 0;
-        }, 400); //0.4초후에 해제!
+        }, 1000); //0.4초후에 해제!
         
-        ////////////////////////////////////
-        autoT = setTimeout(function(){
-            autoI = setInterval(chgImg, 3000);
-        }, 1000);
+        
+        resetBtn();
+        
+        autoI = setInterval(chgImg, 1000);
         
     });//////////click////////
     
