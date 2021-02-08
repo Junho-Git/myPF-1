@@ -102,22 +102,14 @@ $(function(){//////////////////////////jQB///////////////////////
 
     // 2-2. 재생
     // 변경대상: .acton
-    $(".acton").click(function(e){
+    $(".acton").stop().click(function(e){
         e.preventDefault();
       
         clearInterval(autoI);
-        
-        /// 광클금지 /////////////////////////
-        if (prot) return false; //1이면 돌아가
-        prot = 1; //1로만들어 잠금!
-        setTimeout(function () {
-            prot = 0;
-        }, 1000); //0.4초후에 해제!
-        
-        
+              
         resetBtn();
         
-        autoI = setInterval(chgImg, 1000);
+        autoI = setInterval(chgImg, 3000);
         
     });//////////click////////
     
@@ -174,80 +166,22 @@ $(function(){//////////////////////////jQB///////////////////////
     
     ///////////////////////메뉴보드 아이콘/////////////////////////
     // 마우스 오버시 아이콘 바꾸기
-    // 변경대상: .img
+    // 변경대상: .mlist li
+    
+    $(".mlist li").hover(
+        function(){// 마우스 오버시
+            let idx = $(this).index();  
+            //console.log("몇번째?:"+(idx+1));
         
-    $(".img1 a").hover(
-        function(){// 마우스 오버시
-            $(".img1").css({
-                background:"url(images/icons/fnb_list1_on.png) no-repeat",
+            $(".img"+(idx+1)).css({
+                background:"url(images/icons/fnb_list"+(idx+1)+"_on.png) no-repeat",
             });///////css//////////
     },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list1.png) no-repeat",
+        let idx = $(this).index();
+        $(".img"+(idx+1)).css({
+                background:"url(images/icons/fnb_list"+(idx+1)+".png) no-repeat",
             });///////css//////////
-    });
-    $(".img2 a").hover(
-        function(){// 마우스 오버시
-            $(".img2").css({
-                background:"url(images/icons/fnb_list2_on.png) no-repeat",
-            });///////css//////////
-    },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list2.png) no-repeat",
-            });///////css//////////
-    });
-    $(".img3 a").hover(
-        function(){// 마우스 오버시
-            $(".img3").css({
-                background:"url(images/icons/fnb_list3_on.png) no-repeat",
-            });///////css//////////
-    },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list3.png) no-repeat",
-            });///////css//////////
-    });
-    $(".img4 a").hover(
-        function(){// 마우스 오버시
-            $(".img4").css({
-                background:"url(images/icons/fnb_list4_on.png) no-repeat",
-            });///////css//////////
-    },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list4.png) no-repeat",
-            });///////css//////////
-    });
-    $(".img5 a").hover(
-        function(){// 마우스 오버시
-            $(".img5").css({
-                background:"url(images/icons/fnb_list5_on.png) no-repeat",
-            });///////css//////////
-    },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list5.png) no-repeat",
-            });///////css//////////
-    });
-    
-    $(".img6 a").hover(
-        function(){// 마우스 오버시
-            $(".img6").css({
-                background:"url(images/icons/fnb_list6_on.png) no-repeat",
-            });///////css//////////
-    },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list6.png) no-repeat",
-            });///////css//////////
-    });
-    
-    $(".img7 a").hover(
-        function(){// 마우스 오버시
-            $(".img7").css({
-                background:"url(images/icons/fnb_list7_on.png) no-repeat",
-            });///////css//////////
-    },function(){// 마우스 아웃시
-        $(this).parent().css({
-                background:"url(images/icons/fnb_list7.png) no-repeat",
-            });///////css//////////
-    });
+    });//////////hover////////////////////////
     ///////////////////////////////////////////////////////////////////////
     
 });//////////////////////////jQB/////////////////////////////////
